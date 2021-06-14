@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tictactoe">
+<!--    This app is made by Mihir Kumar Badkur-->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TicTacToe">
+        <activity android:name=".game1HumanFirstWithX"
+            android:parentActivityName=".onePlayerActivity">
+
+        </activity>
+        <activity
+            android:name=".gameHumanFirstWithO"
+            android:parentActivityName=".onePlayerActivity">
+
+        </activity>
+        <activity
+            android:name=".game1BotFirstWithO"
+            android:parentActivityName=".onePlayerActivity" />
+        <activity
+            android:name=".game1BotFirstWithX"
+            android:parentActivityName=".onePlayerActivity" />
+        <activity
+            android:name=".onePlayerActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".game2Player"
+            android:parentActivityName=".twoPlayerActivity" />
+        <activity
+            android:name=".twoPlayerActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
